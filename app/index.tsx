@@ -20,8 +20,7 @@ import { Text } from '~/components/ui/text';
 import { Tooltip, TooltipContent, TooltipTrigger } from '~/components/ui/tooltip';
 import { Link, Stack } from 'expo-router';
 
-const GITHUB_AVATAR_URI =
-  'https://i.pinimg.com/originals/ef/a2/8d/efa28d18a04e7fa40ed49eeb0ab660db.jpg'; //dps trocar pra do firebase!
+
 
 export default function Screen() {
   const [progress, setProgress] = React.useState(78);
