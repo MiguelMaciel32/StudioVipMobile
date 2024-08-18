@@ -25,8 +25,8 @@ const Avatarbase =
 
 export default function Home() {
     return (
-      <View>
-        <Card className="flex ml-4 w-full max-w-sm p-6 rounded-2xl">
+      <View className='flex justify-center  mt-20'>
+        <Card className="flex ml-12 w-full max-w-sm p-6 rounded-2xl">
   <CardHeader className="items-center">
     <Avatar alt="Rick Sanchez's Avatar" className="w-24 h-24">
       <AvatarImage source={{ uri: Avatarbase }} />
@@ -37,7 +37,7 @@ export default function Home() {
     <View className="p-3" />
     <CardTitle className="pb-2 text-center">Luis Miguel</CardTitle>
     <View className="flex-row">
-      <CardDescription className="text-base font-semibold">Client</CardDescription>
+      <CardDescription className="text-base font-semibold">Cliente</CardDescription>
       <Tooltip delayDuration={150}>
         <TooltipTrigger className="px-2 pb-0.5 active:opacity-50">
           <Info size={14} strokeWidth={2.5} className="w-4 h-4 text-foreground/70" />
@@ -60,28 +60,5 @@ export default function Home() {
     </View>
   </View>
 </Card>
-      <Text className='font-bold text-sm mt-6 ml-32'>Quer Trocar a Senha?</Text>
-
-      <Input
-        className='mt-2 p-2 mx-4'
-        placeholder='Seu Senha.'
-        aria-labelledbyledBy='inputLabel'
-        aria-errormessage='inputError'
-      />
-      <Input
-        className='mt-2  p-2 mx-4'
-        placeholder='Sua Nova Senha.'
-        aria-labelledbyledBy='inputLabel'
-        aria-errormessage='inputError'
-      />
-      <Input
-        className='mt-2  p-2 mx-4'
-        placeholder='Confirmar Senha.'
-        aria-labelledbyledBy='inputLabel'
-        aria-errormessage='inputError'
-      />
-      <Button className='p-2 mx-20 mt-2'>
-        <Text>Confirmar</Text>
-      </Button>
 </View>
     )}
