@@ -14,11 +14,7 @@ import { Link, Stack } from 'expo-router';
 import { Button } from '~/components/ui/button';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { ArrowRight, Car } from 'lucide-react-native';
-import { ArrowLeft, LocateIcon, Star } from "lucide-react-native";
-
-
-
- 
+import { ArrowLeft, LocateIcon, Star, Scissors, Wind, Flower, Sparkles, Search} from "lucide-react-native";
 
  
 const Avatarbase = 'https://avatars.githubusercontent.com/u/157251097?v=4'; //dps trocar pra do firebase!
@@ -34,34 +30,37 @@ export default function Home() {
             Olá, Luis Miguel
           </Text>
           <Text className='text-xl ml-4 mb-6 font-bold tracking-tight px-4'>
-            Sex, 16 de Agosto
+            Sex, 9 de Setembro
           </Text>
       </View>
       <View className='flex flex-row'>
-      <View className=' flex border-2  flex-row mx-4 rounded-md'>
-      <TextInput className='w-full p-2 mr-2 ' placeholder='Buscar'/>
+      <View className=' flex border-2 flex-row mx-4 rounded-md'>
+      <TextInput className='flex w-96 ml-2' placeholder='Buscar'/>
       </View>
+      <Button variant="outline" size="icon">
+        <Search color={'#000'} />
+      </Button>
       </View>
 
-    <View className='flex flex-row mx-10 gap-4 mt-2 '>
+    <View className='flex flex-row mx-4 gap-4 mt-2 '>
+    <Button>
+    <Scissors color={"#fff"} />
+    </Button>
+
+    <Button>
+    <Wind color={"#fff"} />
+    </Button>
+
+    <Button>
+    <Sparkles color={"#fff"} className="" />
+    </Button>
+
     <Button>
     <ArrowLeft color={"#fff"} className="" />
     </Button>
 
     <Button>
-    <ArrowRight color={"#fff"} className="" />
-    </Button>
-
-    <Button>
-    <ArrowLeft color={"#fff"} className="" />
-    </Button>
-
-    <Button>
-    <ArrowLeft color={"#fff"} className="" />
-    </Button>
-
-    <Button>
-    <ArrowLeft color={"#fff"} className="" />
+    <Flower color={"#fff"} className="" />
     </Button>
     </View>
     <View>
@@ -79,10 +78,12 @@ export default function Home() {
 
     <View className='flex flex-row mt-4 ml-4'>
     <View className='p-22'>
+    <Link href="/Product"> 
       <Image
         className=' h-32 w-24 rounded-md absolute"' 
         source={require("c.jpeg")}
       />
+      </Link>
     </View>
 
 
@@ -92,32 +93,35 @@ export default function Home() {
     </View>
       
     <View>
+    <Link href="/Product"> 
     <Image
-        className=' h-32 w-24 rounded-md absolute"' 
+        className=' h-32 w-24 ml-4 rounded-md absolute"' 
         source={require("d.jpeg")}
       />
+      </Link>
 
     </View>
 
 
     <View>
+    <Link href="/Product"> 
     <Image
         className=' h-32 w-24 mx-2 rounded-md absolute"' 
         source={require("c.jpeg")}
       />
+      </Link>
     </View>
 
-    <View>    
+    <View>  
+    <Link href="/Product">  
     <Image
         className=' h-32 w-24 mx-1  rounded-md absolute"' 
         source={require("d.jpeg")}
       />
+    </Link>
+
 
     </View>
-    <Link href="/Product">
-      <Text>TESTE</Text>
-      </Link>
-
     </View>
 
     </View>

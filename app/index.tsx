@@ -30,28 +30,29 @@ export default function Screen() {
   }
   return (
     <View className='flex-1 justify-center items-center '>
-      
+  
       <Image
-        className='w-48 h-48'
+        className='h-60 w-60'
         source={require('a.png')}
       />
       <Input
-        className='mt-8 px-12'
+        className='mt-8 px-12 w-64 text-center'
         placeholder='Seu Email.'
         aria-labelledbyledBy='inputLabel'
         aria-errormessage='inputError'
       />
     <Input
-        className='mt-8 px-12'
+        className='mt-8 px-12 w-64 text-center'
         placeholder='Sua Senha'
         aria-labelledbyledBy='inputLabel'
         aria-errormessage='inputError'
       />
-      <Button className='mt-4'>
+      <Button className='mt-4 w-40 text-center mt-8'>
       <Link href='/Home'>
         <Text>Entrar</Text>
         </Link>
       </Button>
+      <Text className='mt-4'>Esqueceu sua Senha?</Text>
     </View>
   );
 }
