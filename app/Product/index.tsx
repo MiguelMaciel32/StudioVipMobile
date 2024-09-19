@@ -4,6 +4,7 @@ import { Button } from '~/components/ui/button';
 import { Link, Stack } from 'expo-router';
 
 export default function Product () {
+  
   return (
     <View className="w-full h-screen flex">
       
@@ -23,18 +24,22 @@ export default function Product () {
         
       </View>
       <View className="">
-        <Text className="font-bold text-4xl tracking-tight my-4 px-4">Vintage  Barber</Text>
+        <Text className="font-bold text-4xl tracking-tight my-4 px-4">Alex  Barber</Text>
          <View className="flex-row gap-2 items-center px-4" >
             <LocateIcon color={"#1a1a1a"} />
             <Text className="font-medium">
-        123 Main St, Anytown, USA
+        Jardim Belval, Barueri
             </Text>
           </View>
           <View className="flex-row gap-2 items-center px-4">
             <Star color={"#1a1a1a"} />
-            <Text className="font-medium">Avaliação: 5.0</Text>
+            <Star color={"#1a1a1a"} />
+            <Text className="font-medium">Avaliação: 2.0</Text>
           </View>
           <View className="h-[1px] w-full bg-zinc-950 mt-4" />
+
+
+
       </View>
     </View>
   )

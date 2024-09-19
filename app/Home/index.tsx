@@ -25,14 +25,6 @@ type CardProps = React.ComponentProps<typeof Card>
 export default function Home() {
   return (
     <View className=' p-2'>
-      <View>
-          <Text className='text-2xl ml-4 mt-6'>
-            Olá, Luis Miguel
-          </Text>
-          <Text className='text-xl ml-4 mb-6 font-bold tracking-tight px-4'>
-            Sex, 9 de Setembro
-          </Text>
-      </View>
       <View className='flex flex-row'>
       <View className=' flex border-2 flex-row mx-4 rounded-md'>
       <TextInput className='flex w-96 ml-2' placeholder='Buscar'/>
@@ -41,28 +33,6 @@ export default function Home() {
         <Search color={'#000'} />
       </Button>
       </View>
-
-    <View className='flex flex-row mx-4 gap-4 mt-2 '>
-    <Button>
-    <Scissors color={"#fff"} />
-    </Button>
-
-    <Button>
-    <Wind color={"#fff"} />
-    </Button>
-
-    <Button>
-    <Sparkles color={"#fff"} className="" />
-    </Button>
-
-    <Button>
-    <ArrowLeft color={"#fff"} className="" />
-    </Button>
-
-    <Button>
-    <Flower color={"#fff"} className="" />
-    </Button>
-    </View>
     <View>
     <Card className='mt-4'>
     <Image 
